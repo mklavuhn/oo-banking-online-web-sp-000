@@ -20,6 +20,7 @@ class Transfer
     
   def execute_transaction
     if !valid?
+      @status = "closed"
       "Transaction rejected. Please check your account balance."
 
     elsif @status == "complete"
