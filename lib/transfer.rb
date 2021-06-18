@@ -24,13 +24,10 @@ class Transfer
       "Transaction rejected. Please check your account balance."
     else 
       @sender.balance -= @amount
-    end
+      @receiver.deposit += @amount
 
     elsif status == "complete"
       "Transaction was already excuted"
-    else
-      @receiver.deposit( amount )
-      @status = "complete"
     end
   end
   
