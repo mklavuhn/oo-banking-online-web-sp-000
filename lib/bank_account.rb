@@ -14,8 +14,8 @@ class BankAccount
   end
   
   def display_balance
-    balance = deposit()
-    Puts "Your balance is $#{name.balance}."
+    new_balance = deposit()
+    Puts "Your balance is $#{name.new_balance}."
   end
 
 
