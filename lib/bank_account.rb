@@ -10,7 +10,7 @@ class BankAccount
   end
   
   def deposit(int)
-    total_value = int + @balance
+    total_value = int + balance
     total_value
   end
 
