@@ -8,5 +8,12 @@ class BankAccount
     @balance = balance
     @status = status
   end
+  
+  def deposit(int)
+    total_value = int + @balance
+    total_value
+  end
+
+
 
 end
