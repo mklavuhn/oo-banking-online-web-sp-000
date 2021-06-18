@@ -21,10 +21,10 @@ class Transfer
   def execute_transaction
     if @amount > @sender.balance || @status == "closed"
       @status = "rejected"
-      p "Transaction rejected. Please check your account balance."
+      "Transaction rejected. Please check your account balance."
 
     elsif status == "complete"
-      p "Transaction was already excuted"
+      "Transaction was already excuted"
     else
       @sender.deposit( amount * -1 ) 
       @receiver.deposit( amount )
