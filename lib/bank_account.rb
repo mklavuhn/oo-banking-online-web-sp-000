@@ -9,7 +9,7 @@ class BankAccount
     @status = status
   end
   
-  def deposit(int)
+  def deposit(int, balance)
     total_value = int + balance
     total_value
   end
