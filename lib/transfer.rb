@@ -25,8 +25,8 @@ class Transfer
     else 
       @sender.balance -= @amount
       @receiver.deposit += @amount
-
-    elsif status == "complete"
+    end
+    if status == "complete"
       "Transaction was already excuted"
     end
   end
