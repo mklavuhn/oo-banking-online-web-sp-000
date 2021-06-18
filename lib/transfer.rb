@@ -12,6 +12,7 @@ class Transfer
   
   def valid? 
     if @sender && @receiver 
+  end
     
   
   
